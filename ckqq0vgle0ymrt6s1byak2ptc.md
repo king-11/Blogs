@@ -88,7 +88,11 @@ The list, as you can see, consisted of around 30-40 organizations. So I started 
 
 In the end, I decided to go with [HTTP-APIs](https://github.com/HTTP-APIs). I started checking out their Contributing Guidelines, Resources to get started, and their repositories. I selected HTTP-APIs because REST APIs are my forte, and they were doing something pretty interesting.
 
-I made a few contributions to their repos, upgraded their dependencies to support python v3.8 and updated Dockerfile. Still, a few things that took me away from them were that the mentors weren't that responsive, and even though I went through all of their resources, I couldn't find something significant to contribute. So I drifted away from HTTP-APIs, but at the back of my mind, it was still that I have to make it work there somehow.
+I made a few contributions to their repos, upgraded their dependencies to support python v3.8 and updated Dockerfile. 
+
+Still, a few things that took me away from them were that the mentors weren't that responsive, and even though I went through all of their resources, I couldn't find something significant to contribute.
+
+So I drifted away from HTTP-APIs, but at the back of my mind, it was still that I have to make it work there somehow.
 
 ## Change of Plans
 
@@ -98,7 +102,7 @@ The story behind the finding of Chapel is something that you don't hear often. I
 
 My friend [@Jatin](https://codeforces.com/profile/rivalq) stated to me that, and I quote, "there is this language where you can run statements simultaneously using a `forall` loop". He seemed pretty interested, and so sparked the idea of taking a look at Chapel.
 
-It was also at the same time, i.e. February, talking with one of my seniors [@Ashish](https://www.linkedin.com/in/ashishkr23438/), who previously got selected in [OSGeo](https://github.com/pgRouting). My primary concern was that HTTP-APIs didn't work, and if I go in places related to Web Development there, the amount of already active students is way more than I wish to compete with.
+It was also at the same time, i.e. February, I was talking with one of my seniors [@Ashish](https://www.linkedin.com/in/ashishkr23438/), who previously got selected in GSoC under [OSGeo](https://github.com/pgRouting). My primary concern was that HTTP-APIs didn't work, and if I go in places related to Web Development there, the amount of already active students is way more than I wish to compete with.
 
 ![change of plans](https://media.giphy.com/media/9Dtye59YLYQpIwQWpv/giphy.gif)
 
