@@ -170,7 +170,7 @@ Fast forward to 17th May, I was in a voice call when the result came out, and I 
 
 GSoC is a non-competitive (after getting selected, of course 😏) program so try to cherish the community alongside it. Find your motivation; why do you even want to do it first, and the rest will follow.
 
-GSoC is not an internship and should not be looked at as a way to earn money. It is definitely not something you should pursue half-heartedly or just for the sake of it, nor it would help you neither the community, and there can be better ways for you than open-source.
+GSoC is not an internship and should not be looked at as a way to earn money. It is definitely not something you should pursue half-heartedly or just for the sake of it, neither it would help you nor the community, and there can be better ways for you than open-source.
 
 I am learning a lot from my mentors and fellow GSoC mentees. The community is something I will definitely enjoy and use my summer to learn from them and, as I say, make **Chapel go to Web**.
 
