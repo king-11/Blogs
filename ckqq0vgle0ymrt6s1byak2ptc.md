@@ -122,7 +122,7 @@ I was observant even when reading the documentation and talked in the [gitter](h
 
 ![coding is fun](https://cdn.hashnode.com/res/hashnode/image/upload/v1625410769039/Am_Fu6jT4.gif)
 
-Something that usually people forget about is interacting a being a part of the community. It's not just about coding your way around, and I made sure that I opened gitter every day to take a look at the ongoing discussion here as well as on Github Issues.
+Something that usually people forget about is interacting and being a part of the community. It's not just about coding your way around, and I made sure that I opened gitter every day to take a look at the ongoing discussion here as well as on Github Issues.
 
 As chapel is a comparatively new language, I knew there could be scope for improvement on the implementation done in Modules. Also, at the time when I started contributing, I was pursuing courses on Algorithms and Operating System as part of my college curriculum.
 
