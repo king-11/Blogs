@@ -10,7 +10,9 @@ Currently, we can do network programming by using [C Interoperability](https://c
 
 ## My Project
 
-My Google Summer of Code project with Chapel was focused on creating a standard "Socket Library". This project aimed to ensure concurrent, parallel safe, and easy to use constructs for networking. The project was built on top of C System Calls, saving users from their complexity to perform even the most trivial tasks.
+My Google Summer of Code project with Chapel was focused on creating a standard "Socket Library". This project aimed to ensure concurrent, parallel safe, and easy to use constructs for networking.
+
+The project was built on top of C System Calls, saving users from their complexity to perform even the most trivial tasks.
 
 This blog post is for my final submission of the GSoC Project.
 
@@ -70,7 +72,7 @@ To treat socket connections like chapel `file` we needed access to their file de
 Finally, to resolve Domain Name Service from user inputs like _"https://summerofcode.withgoogle.com/"_ I made some fixes to `getaddrinfo` and constructs related to it whose old implementation had a few issues:
 - Some of the function definitions were not correct which were resulting in segmentation fault and memory leak.
 - `addrinfo` wasn't using the new capabilities of chapel runtime and was not interacting with C code it was defined separately.
-- As `sys_addrinfo_ptr` was an opaque type we can't compare it with `nil` which was necessary for checking end of linked list returned by `getaddrinfo`.
+- As `sys_addrinfo_ptr` was an opaque type we can't compare it with `nil` which was necessary for checking the end of the linked list returned by `getaddrinfo`.
 
 %[https://github.com/chapel-lang/chapel/pull/18072]
 
@@ -82,7 +84,7 @@ For this, I decided to use I/O multiplexing using `select` system calls where th
 
 ![blocking.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1629635056200/job0Y6Y0A.png)
 
-The issue was that calling in normal select will cause the pthread on which chapel qthreads are scheduled to block. Hence, to counter this [qthreads library](https://cs.sandia.gov/qthreads/) provides its own set of system calls that will block but not on the current pthread instead are transferred to another helper pthread where they do blocking.
+The issue was that calling in normal select will cause the `pthread` on which chapel `qthreads` are scheduled to block. Hence, to counter this [qthreads library](https://cs.sandia.gov/qthreads/) provides its own set of system calls that will block but not on the current `pthread` instead are transferred to another helper `pthread` where they do blocking.
 
 The outcome was making use of `qt_select` inside of our `sys_select` call.
 
@@ -90,7 +92,7 @@ The outcome was making use of `qt_select` inside of our `sys_select` call.
 
 %[https://github.com/chapel-lang/chapel/pull/18019]
 
-There were certain hurdles and PR remained stale for some time because we faced hurdles due to bugs in error informing inside of qthread's library procedures, which were resolved by collaborating with qthread's core team. The following is the issue that describes the bugs in detail.
+There were certain hurdles and PR remained stale for some time because we faced hurdles due to bugs in error informing inside of `qthread's` library procedures, which were resolved by collaborating with `qthread's` core team. The following is the issue that describes the bugs in detail.
 
 %[https://github.com/Qthreads/qthreads/issues/88]
 
@@ -166,7 +168,9 @@ proc main() {
 }
 ````
 
-We can utilize chapel `begin` to demonstrate UDP connections in a single program. `begin` creates a new task or user-level thread the terminology might differ but it has a separate execution context from the main task/thread providing us capabilities for task parallelization.
+We can utilize chapel `begin` to demonstrate UDP connections in a single program. 
+
+`begin` creates a new task or user-level thread which has a separate execution context from the main task/thread providing us capabilities for task parallelization.
 
 ```python
 use Socket;
@@ -196,11 +200,10 @@ proc main() throws {
 
 ![future possibilities](https://media.giphy.com/media/ZZkCo8zKWtt2ZgozfX/giphy.gif?cid=ecf05e47dlzpd6z4xb6eam0prpm729lgz33cxjudxlx2sgkj&rid=giphy.gif&ct=g)
 
-- The next step for the socket module will be deciding upon the design for HTTP and TCP Servers that can then be used by users. This might be implemented as a separate module but at its core will like the Socket Module 😉.
-- Integrating `libevent` with the chapel channels so they don't block the whole thread anymore and can utilize performant I/O multiplexing constructs like `epoll`, `kqueue`, etc.
+- Integrating `libevent` with the chapel channels through an I/O plugin.
 - Running performance tests to analyze the network calls and I/O latency.
-- Currently, the [LLVM](https://llvm.org/) backend can't work with the opaque type which libevent uses, so that's an issue that needs to be resolved.
-- Providing users with libevent as a dependency if they don't have it on their system. This will require the ability for Standard Packages to be [Mason](https://chapel-lang.org/docs/tools/mason/mason.html) Packages.
+- Supporting opaque types with, the [LLVM](https://llvm.org/) backend.
+- Providing users with libevent as a dependency if they don't have it on their system.
 
 ## Learning
 
