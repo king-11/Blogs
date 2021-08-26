@@ -207,7 +207,7 @@ proc main() throws {
 
 ## Learning
 
-![learning](https://media.giphy.com/media/8dYmJ6Buo3lYY/giphy.gif?cid=ecf05e4721ue2x3nxt06t8iq5dwwx32g0gjdoy4sbmj1z7pw&rid=giphy.gif&ct=g)
+![learning](https://media.giphy.com/media/6NVOQr1I5H1MA/giphy.gif?cid=ecf05e47ejaapa9tkvvis7p2hqauem2mls3ueht6vlehn1ed&rid=giphy.gif&ct=g)
 
 - The major learning outcome from this project was good coding practice. I learned how to write DRY, reusable code following SOLID principles. I also learned how to write good tests/specs covering all possible scenarios.
 - When writing the Design for the project, I had long discussions with my mentors trying to decide on exposed APIs. Coming up with good names for methods, variables, and hiding the complexity from end-users.
