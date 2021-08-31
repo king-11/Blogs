@@ -20,7 +20,7 @@ This blog post is for my final submission of the GSoC Project.
 - Mentor: [Michael Ferguson](https://github.com/mppf), [Krishna Dey](https://github.com/krishnadey30) and [Ankush Bhardwaj](https://github.com/ankingcodes).
 - Organisation: [Chapel](https://github.com/chapel-lang)
 
-Under this project, the following three major parts needed to be managed:
+Under this project, the following four major parts needed to be managed:
 
 1. Getting review over design for the socket library from other developers.
 2. Adding and updating runtime functions that can then be used in Socket Module.
