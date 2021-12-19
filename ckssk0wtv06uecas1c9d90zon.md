@@ -36,7 +36,7 @@ Pull requests created in the period of GSoC:
 | [File Descriptor Getter for `file`](https://github.com/chapel-lang/chapel/pull/17988) | Approved | Merged |
 | [Qthread Select](https://github.com/chapel-lang/chapel/pull/18019) | Approved | Merged |
 | [Update Addrinfo Constructs](https://github.com/chapel-lang/chapel/pull/18072) | Approved | Merged |
-| [Socket Library](https://github.com/chapel-lang/chapel/pull/17960) | Pending | Open |
+| [Socket Library](https://github.com/chapel-lang/chapel/pull/17960) | Approved | Open |
 
 ## Work Done
 
