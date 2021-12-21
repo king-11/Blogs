@@ -198,3 +198,5 @@ I am very thankful to [Vicent](https://twitter.com/vmg) for walking me through t
 Also wanna thank [Florent](https://www.linkedin.com/in/florent-poinsard) and [Andres](https://www.linkedin.com/in/andrestaylor) who were working alongside me on this project and really helped me wherever was needed.
 
 Lastly, I did like to thank my mentor [Shivansh Saini](https://www.linkedin.com/in/shivanshs9/) for always being a motivation, always will be and one of the reasons I applied for LFX.
+
+![thanks](https://media.giphy.com/media/lD76yTC5zxZPG/giphy.gif)
